@@ -1,10 +1,30 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/" @click="getPageName(option)">Options API</router-link>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
+
+<script>
+
+
+export default {
+  data() {
+    return {
+      option: 'Option API',
+      compo: 'Composition API',
+      reactive: 'Composition with Reactive API',
+      pageName: 'Options API'
+    }
+  },
+  methods: {
+    getPageName(name) {
+      this.pageName = name;
+    }
+  }
+}
+
+</script>
 
 <style>
 #app {
