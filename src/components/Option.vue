@@ -67,13 +67,14 @@ ul {
     width: 200px;
     margin: 20px auto 0;
 }
-li{
+
+li {
     border: 1px solid;
-    display:flex;
+    display: flex;
     margin-bottom: 10px;
 }
 
-li span{
-    flex-grow:1;
+li span {
+    flex-grow: 1;
 }
 </style>
