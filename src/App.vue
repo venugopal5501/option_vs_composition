@@ -1,6 +1,8 @@
 <template>
   <nav>
-    <router-link to="/" @click="getPageName(option)">Options API</router-link>
+    <router-link to="/" @click="getPageName(option)">Options API</router-link>|
+    <router-link to="/composition" @click="getPageName(compo)">Composition API</router-link>|
+    
   </nav>
   <router-view />
 </template>
