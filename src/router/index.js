@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import OptionPage from '@/components/Option.vue'
 import CompositionPage from '@/components/Composition.vue'
-
+import ReactiveObject from '@/components/reactive.vue'
 const routes = [
   {
     path: '/',
@@ -12,6 +12,11 @@ const routes = [
     path:'/composition',
     name: 'CompositionPage',
     component: CompositionPage
+  },
+  {
+    path:'/reactive',
+    name:'ReactiveObject',
+    component: ReactiveObject
   }
 ]
 
